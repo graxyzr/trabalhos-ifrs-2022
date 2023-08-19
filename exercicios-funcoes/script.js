@@ -248,3 +248,41 @@ if (temChave(itens) == false) {
     alert("NÃO POSSUI CHAVE!");
 
 }
+
+
+
+
+// 6 - Precisamos limitar as posições em que um inimigo pode andar na tela. A menor posição possível é 0 e a maior, 100: qualquer valor maior que 100 ou menor que 0 sairia fora da tela. Precisamos de uma função LimitaPosicao que recebe uma POSICAO que pode ter qualquer valor positivo ou negativo, verifica se ela é válida ou não e retorna sempre um valor corrigido entre 0 e 100.
+
+function LimitaPosicao(posicao) {
+
+    if (posicao >= 0 && posicao <= 100) {
+
+        return true;
+
+    }
+
+    else {
+
+        return false;
+
+    }
+
+
+}
+
+posicao = Number(prompt("Informe a posição:"));
+
+var finalLimitaPosicao = LimitaPosicao(posicao);
+
+if (LimitaPosicao(posicao) == false && posicao < 0) {
+
+    console.log("0");
+
+}
+
+if (LimitaPosicao(posicao) == false && posicao > 100) {
+
+    console.log("100");
+
+}
