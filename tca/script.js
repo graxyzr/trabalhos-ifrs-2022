@@ -2,7 +2,7 @@
 
 // FUNCTION - CALCULA RESULTADO FINAL
 
-function verificaFinal (pontodiplomata, pontoanalista, pontoexplorador, pontosentinela) {
+function verificaFinal(pontodiplomata, pontoanalista, pontoexplorador, pontosentinela) {
 
     resp = Math.max(pontodiplomata, pontoanalista, pontoexplorador, pontosentinela);
     if (resp == pontodiplomata) {
@@ -114,7 +114,7 @@ if (prompt("Você acredita que alcançar uma verdade é mais importante que ganh
     pontosentinela += 5;
 }
 else {
-    pontoanalista += 5;    
+    pontoanalista += 5;
 }
 
 if (prompt("Em um debate, você faria de tudo para ganhar? \n\n1️⃣ - Sim \n2️⃣ - Não") == "1") {
@@ -126,7 +126,7 @@ else {
 }
 
 if (prompt("Você costuma expressar simpatia somente após sentir empatia por alguém? \n\n1️⃣ - Sim \n2️⃣ - Não") == "1") {
-    pontoanalista += 5; 
+    pontoanalista += 5;
     pontosentinela += 5;
 }
 else {
@@ -301,5 +301,3 @@ else {
 }
 
 var chamaFunction = verificaFinal(pontodiplomata, pontoanalista, pontoexplorador, pontosentinela);
-
-///////////////////////////////////////////////////////////////////////////////////////
